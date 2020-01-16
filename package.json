@@ -1,0 +1,40 @@
+{
+  "name": "log-hub",
+  "version": "1.0.0",
+  "description": "远程查看UnityLog",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "repository": "",
+  "keywords": [
+    "Electron",
+    "remote",
+    "log",
+    "unity"
+  ],
+  "author": "aabao <abao883@gmail.com>",
+  "license": "CC0-1.0",
+  "build":{
+    "appId": "com.abao.loghub",
+    "productName":"LogHub",
+    "win": {
+        "target": "nsis",
+        "icon": "build/icon.png"
+    },
+    "nsis":{
+        "oneClick": false,
+        "allowToChangeInstallationDirectory" : true
+    }
+  },
+  "devDependencies": {
+    "electron": "^3.0.3",
+    "electron-builder": "^22.2.0",
+    "ws": "^7.2.1"
+  },
+  "dependencies": {
+    "ws": "^7.2.1"
+  }
+}

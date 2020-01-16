@@ -1,0 +1,148 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+}
+.left_block{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    min-width:  200px;
+    height: 100%;
+    background-color: white;
+    z-index: 10001;
+}
+.split_line{
+    position: absolute;
+    width: 2px;
+    height:100%;
+    right:0px;
+    top: 0px;
+    background: black;
+    z-index: 10001;
+}
+.right_top{
+    position: fixed;
+    width: 100%;
+    height: 20px;
+    top: 0px;
+    margin-left: 200px;
+    z-index: 10001;
+    background-color: gray;
+}
+label.toggle-label{
+    display: block;
+    float: left;
+    width: 100px;
+    height:20px;
+    user-select:none;
+}
+label.toggle-label input[type="checkbox"]{
+    visibility: hidden;
+    opacity: 0;
+    margin: 0px;
+    height: 0px;
+    width: 0px;
+}
+label.toggle-label .toggle-box{
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    height:100%;
+    background-color:#fff;
+}
+label.toggle-label input[type="checkbox"]:checked + .toggle-box.Log{
+    background-color:rgba(202, 202, 202, 0.952);
+}
+label.toggle-label input[type="checkbox"]:checked + .toggle-box.Warning{
+    background-color:yellow;
+}
+label.toggle-label input[type="checkbox"]:checked + .toggle-box.Error{
+    background-color:red;
+}
+label.toggle-label.toggle-anim .toggle-box{
+    -webkit-transition:background-color ease-in-out .3s;
+    transition:background-color ease-in-out .3s;
+}
+span.toggle-label{
+    margin-left: 4px;
+}
+
+.filter-input[type="search"]{
+    display: block;
+    float: left;
+    position: relative;
+    min-width: 100px;
+    padding: 0px;
+    height: 20px;
+}
+
+.right_content{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    left: 200px;
+    right: 0px;
+    margin-top: 20px;
+    margin-bottom: 400px;
+    z-index: 10000;
+}
+.right_bottom{
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+    height: 400px;
+    margin-left: 200px;
+    background: gray;
+    z-index: 10001;
+    visibility: hidden;
+}
+
+log_item{
+    display: block;
+    padding-left: 2px;
+    padding-right: 2px;
+    border-bottom: 1px solid black;
+    background-color: rgba(160, 160, 160, 0.81);
+}
+
+log_item.hide{
+    display: none;
+}
+
+log_item.log{
+    color: black;
+}
+log_item.warning{
+    color: yellow;
+}
+log_item.error{
+    color: red;
+}
+
+log_item .condition{
+    white-space: pre-line;
+    margin: 4px;
+}
+
+log_item .stack_trace{
+    white-space: pre-line;
+    color:grey;
+    margin: 4px;
+}
+
+log_item .time{
+    white-space: pre-line;
+    color:grey;
+    margin: 4px;
+}
+
+.log-man{
+    display: block;
+    position: relative;
+    margin: 5px;
+    border-bottom: 1px solid black;
+}
