@@ -5,7 +5,7 @@
 * UnityLog
 
 ## Screenshot
-![screenshot-1](https://github.com/aaBaO/loghub/screenshots/screenshot-1.png)
+![screenshot-1](https://github.com/aaBaO/loghub/blob/master/screenshots/screenshot-1.png?raw=true)
 
 ## How to use
 
